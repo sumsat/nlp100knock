@@ -1,10 +1,10 @@
 # coding: utf-8
-#文字bi-gram
+#文字n-gram
 def ngram_char(string, n):
     ngrams = [string[i:i+n] for i in range(len(string) - (n - 1))]
     return ngrams
 
-#単語bi-gram
+#単語n-gram
 def ngram_word(words, n):
     ngrams = [''.join(words[i:i+n]) for i in range(len(words) - (n - 1))]
     return ngrams
